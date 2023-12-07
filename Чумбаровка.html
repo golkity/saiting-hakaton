@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stul3.css" rel="stylesheet">
+    <link href="png/favicon-16x16.png" rel="icon" type="image/x-icon">
+    <title>Чумбарова-Лучинского</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bg"></div>
+        <ul>
+            <li class="logo" id="log">
+                <p><a href="https://www.tripadvisor.ru/Attraction_Review-g298499-d4344913-Reviews-Pedestrian_Chumbarova_Luchinskogo_Avenue-Arkhangelsk_Arkhangelsk_Oblast_Northwest.html">Чумбарова-Лучинского</a></p>
+            </li>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#history">История</a></li>
+            <li><a href="#facts">Экскурсии</a></li>
+            <li><a href="main.html">Меню</a></li>
+
+        </ul>
+    </nav>
+    <div class="hero" id="main">
+        <h1 id="h0">Чумбарова-Лучинского</h1>
+    </div>
+    <div class="content-wrapper">
+
+        <div class="stage">
+            <div class="wrap">
+                <div class="square-wrapper">
+                    <div class="square square-transition shadow">
+                        <p class="zagolovok" id="history">
+                            История
+                        </p>
+                        <p>
+                            В конце 18 века эта улица называлась Большой Мещанской, затем проспект получил имя Средний (по своему расположению между двумя длинными проспектами: Троицким и Ломоносова). Затем назывался Псковским, а в 1921 году получил имя Фёдора Степановича Чумбарова-Лучинского
+                            — революционера, поэта и журналиста, который когда-то жил на этой улице.
+                        </p>
+                        <img src="https://f.otzyv.ru/f/11/10/90556/23/21012315192778647799.jpg" class="kartinka" align="left">
+                        <p class="left-txt">
+                            В начале 1980-х годов в Архангельске было принято решение по созданию на проспекте Чумбарова-Лучинского «заповедной улицы» — разместить здесь все типы домов, которые можно было встретить в застройке Архангельска конца 19 — начала 20 века.
+                        </p>
+                        <p>
+                            Помимо архитектурных памятников на проспекте Чумбарова-Лучинского расположен музей архангельского пряника козули, визит-центр музея Малые Корелы в Доме коммерческого собрания, культурный центр Поморская Артель, литературный музей, а также памятники северным
+                            писателям Степану Писахову и Борису Шергину, сочиняющему очередную эпиграмму Козьме Пруткову и оседлавшему огромного налима поморскому мужику Сене Малине.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage1">
+            <div class="wrap1">
+                <div class="square-wrapper1">
+                    <div class="square1 square-transition1 shadow1">
+                        <p class="zagolovok" id="facts">
+                            Экскурсии по Чумбаровке
+                        </p>
+                        <ol>
+                            <li><strong><font color="black">Дом А.В.Ананьина</font></strong>: Дом деревянный с имитацией кирпичной кладки на первом этаже. Владелец дома — Алексей Васильевич Ананьин — сын торгующего крестьянина, один из влиятельнейших людей
+                                в Архангельске в конце XIX - начале ХХ века.</li>
+                            <li><strong><font color="black">Усадьба М.Т.Куницыной</font></strong>: Мария Тимофеевна Куницына была родом из зажиточной поморской семьи и дом в престижном районе Архангельска был построен на средства, которые она получила в приданое
+                                от отца-рыбопромышленника. При доме имелись каретник, ледник и небольшой садик.</li>
+                            <li><strong><font color="black">Дом А.С.Чудинова</font></strong>: Русский стиль в духе эклектики. Очень богатый декор — пятигранный эркер с балконами по краям и много резьбы. Андрей Степанович Чудинов был выходцем из деревни, но
+                                в течение своей жизни он сумел из мелкого торговца стать крупным архангельским лесопромышленником.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage2">
+            <div class="wrap2">
+                <div class="square-wrapper2">
+                    <div class="square2 square-transition2 shadow2">
+                        <iframe class="scr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.4320665799437!2d40.526663278272416!3d64.53545897753988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x44183730a77094cb%3A0x433e94bce7d40737!2z0KfRg9C80LHQsNGA0L7QstC60LA!5e0!3m2!1sru!2sru!4v1701885865809!5m2!1sru!2sru"
+                            width="900" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper2');
+                var square = squareWrapper.querySelector('.square2');
+                square.classList.remove('square-transition2');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition2');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition2');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper1');
+                var square = squareWrapper.querySelector('.square1');
+                square.classList.remove('square-transition1');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition1');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition1');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

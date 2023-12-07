@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stul2.css" rel="stylesheet">
+    <link href="png/favicon-16x16.png" rel="icon" type="image/x-icon">
+    <title>Музей Писахова</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bg"></div>
+        <ul>
+            <li class="logo">
+                <p><a href="https://vk.com/public199669396">Музей Писахова</a></p>
+            </li>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#history">История</a></li>
+            <li><a href="#facts">Экскурсии</a></li>
+            <li><a href="main.html">Меню</a></li>
+
+        </ul>
+    </nav>
+    <div class="hero" id="main">
+        <h1 id="h0">Музей Писахова</h1>
+    </div>
+    <div class="content-wrapper">
+
+
+        <div class="stage">
+            <div class="wrap">
+                <div class="square-wrapper">
+                    <div class="square square-transition shadow">
+                        <p class="zagolovok" id="history">
+                            История
+                        </p>
+                        <p>
+                            Музей расположен в памятнике архитектуры XIX века «Торговое здание купца А. Н. Буторова». Торговое здание было построено в 1898–1903 гг. и располагалось на территории городской усадьбы купца первой гильдии Андрея Николаевича Буторова, на улице Поморской.
+                            Каменный дом Буторова был одним из первых в городе зданий, построенных специально для магазинов. В советский период здание использовалось под магазины, административные учреждения, аптекоуправление.
+                        </p>
+                        <img src="https://avatars.mds.yandex.net/get-altay/3986639/2a000001780292a10b7aaaa3a7f7dfba0d01/XXXL" class="kartinka" align="left">
+                        <p class="left-txt">
+                            В 1994 году здание передано Архангельскому музею изобразительных искусств (с 1994 года – Государственное музейное объединение «Художественная культура Русского Севера»). Почти сразу на первом этаже здания разместился выставочный зал с экспозицией, посвящённой
+                            творчеству Степана Григорьевича Писахова.
+                        </p>
+                        <p>
+                            Степан Григорьевич Писахов (1879–1960) – художник, писатель, путешественник, публицист, педагог и этнограф. В собрании Музейного объединения находится около 300 живописных и графических работ художника. Талант Писахова как художника-пейзажиста раскрылся
+                            в изображении Севера, ему удалось создать особый образ природы архангельского края, его белых ночей. «Писаховские» сосенки на берегу Белого моря стали такими же нарицательными, как березки Левитана.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage1">
+            <div class="wrap1">
+                <div class="square-wrapper1">
+                    <div class="square1 square-transition1 shadow1">
+                        <p class="zagolovok" id="facts">
+                            Экскурсии по музею Писахова
+                        </p>
+                        <ol>
+                            <li><strong><font color="black">130-летию со Дня рождения Шергина</font></strong>: Музей Писахова предсавтляет наследие писателя – «драгоценнейшее завещание» будущим поколениям о том, как беречь веру, любовь, семью, родину, о том,
+                                как жить в ладу с собой и каждую минуту ощущать радость и свет в душе.</li>
+                            <li><strong><font color="black">Рождество в Козульгороде</font></strong>: В музее покажут собирательный образ Русского Севера от Арктики до Вологды, к примеру традиционная козуля, авторский пряник, сахарные и имбирные изделия,
+                                реконструкция старинных пряников, шатровая церковь Рождества Христова, вертеп и колокольчики, мезенская и борецкая росписи, прялка в виде пазлов, зимние пейзажи, чаепитие, забавы и гуляния</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage2">
+            <div class="wrap2">
+                <div class="square-wrapper2">
+                    <div class="square2 square-transition2 shadow2">
+                        <iframe class="scr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.4783957008792!2d40.522460678272424!3d64.53472207753941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4418368039baaba7%3A0x3323e441d537c33!2z0JzRg9C30LXQuSDRhdGD0LTQvtC20L3QuNC60LAg0Lgg0YHQutCw0LfQvtGH0L3QuNC60LAg0KEu0JMuINCf0LjRgdCw0YXQvtCy0LA!5e0!3m2!1sru!2sru!4v1701886054930!5m2!1sru!2sru"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper2');
+                var square = squareWrapper.querySelector('.square2');
+                square.classList.remove('square-transition2');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition2');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition2');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper1');
+                var square = squareWrapper.querySelector('.square1');
+                square.classList.remove('square-transition1');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition1');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition1');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

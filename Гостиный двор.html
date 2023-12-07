@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stul1.css" rel="stylesheet">
+    <link href="png/favicon-16x16.png" rel="icon" type="image/x-icon">
+    <title>Гостиные дворы</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bg"></div>
+        <ul>
+            <LI class="logo">
+                <p><a href="https://vk.com/kraeved29">Гостиные дворы</a></p>
+            </LI>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#history">История</a></li>
+            <li><a href="#facts">Экскурсии</a></li>
+            <li><a href="main.html">Меню</a></li>
+        </ul>
+    </nav>
+    <div class="hero" id="main">
+        <h1 id="h0">Гостиные дворы</h1>
+    </div>
+    <div class="content-wrapper">
+        <div class="stage">
+            <div class="wrap">
+                <div class="square-wrapper">
+                    <div class="square square-transition shadow">
+                        <p class="zagolovok" id="history">
+                            История
+                        </p>
+
+                        <p>
+                            История у архангельского Гостиного двора весьма занятная. В 17 веке Архангельск за неимением тогда Санкт-Петербурга был торговой точкой страны. Торговля велась как раз в Гостином дворе, на тот момент построенном из дерева (начало 17 века).
+                        </p>
+                        <img src="https://fs.tonkosti.ru/8d/2v/8d2vpz8bv1s8c0w0ggsswkos4.jpg" class="kartinka" align="left">
+                        <p class="left-txt">
+                            В 1694 году в городе побывал Пётр I. Приезжал он сюда понаблюдать за торговлей иностранных купцов. К 18 веку вся торговля оказалась перенесена в Санкт-Петербург, потому за ненадобностью Гостиные дворы стали разрушаться. На торговлю через Архангельск наложили
+                            ограничения.
+                        </p>
+                        <p>
+                            К 1770 году аварийное строение решили разбирать, а чуть позже комплекс Гостиного двора активно достраивался. Появились соляные склады, здание биржи, на которой в свое время поднимали флаг для облегчения навигации
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage1">
+            <div class="wrap1">
+                <div class="square-wrapper1">
+                    <div class="square1 square-transition1 shadow1">
+                        <p class="zagolovok" id="facts">
+                            Экскурсии по Гостиному двору
+                        </p>
+                        <ol>
+                            <li><strong><font color="black">Секреты стен</font></strong>: Архангельский гостиный двор служил не только торговым, но и оборонительным сооружением, построенным в 1668-1684 годах. Разгадайте тайны его стен, хранящих в себе исторические
+                                перипетии города.</li>
+                            <li><strong><font color="black">Арктические корни</font></strong>: Гостиный двор стоит на мысе Пур-Наволок, что делает его не только культурным, но и стратегическим объектом. Откройте для себя, как это сооружение связано с арктическими
+                                экспедициями и историей судостроения.</li>
+                            <li><strong><font color="black">Краеведческий марафон</font></strong>: Архангельский краеведческий музей, расположенный в гостином дворе, предлагает увлекательные экспозиции. Исследуйте богатство знаний об истории города, его роли
+                                в Северной войне и многом другом.</li>
+                            <li><strong><font color="black">Тайны набережной</font></strong>: Расположенные на набережной Северной Двины, гостиные дворы являются одним из прекраснейших мест в Архангельске. Узнайте, как это историческое здание сливается с
+                                живописным окружением, создавая уникальную атмосферу.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage2">
+            <div class="wrap2">
+                <div class="square-wrapper2">
+                    <div class="square2 square-transition2 shadow2">
+                        <iframe class="scr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.158620667359!2d40.51118786828554!3d64.54026805941561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x441836868fc21701%3A0x16d58ab9f46239bc!2z0JDRgNGF0LDQvdCz0LXQu9GM0YHQutC40Lkg0LrRgNCw0LXQstC10LTRh9C10YHQutC40Lkg0LzRg9C30LXQuQ!5e0!3m2!1sru!2sru!4v1701860159413!5m2!1sru!2sru"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+            </footer>
+        </div>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper2');
+                var square = squareWrapper.querySelector('.square2');
+                square.classList.remove('square-transition2');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition2');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition2');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script>
+            (function() {
+                var squareWrapper = document.querySelector('.square-wrapper1');
+                var square = squareWrapper.querySelector('.square1');
+                square.classList.remove('square-transition1');
+
+                var observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            square.classList.add('square-transition1');
+                            return;
+                        }
+
+                        square.classList.remove('square-transition1');
+                    });
+                });
+
+                observer.observe(squareWrapper);
+            })();
+        </script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/snejok.js"></script>
+</body>
+
+</html>
